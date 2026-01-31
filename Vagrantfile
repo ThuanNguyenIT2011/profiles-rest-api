@@ -1,7 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "utm/ubuntu-24.04"
 
-  # Không cấu hình synced_folder gì cả => dùng default của provider (./ -> /vagrant)
 
    config.vm.network "forwarded_port", guest: 8000, host: 8000
 
